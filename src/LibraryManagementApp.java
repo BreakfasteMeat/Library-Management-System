@@ -8,6 +8,7 @@ public class LibraryManagementApp extends JFrame{
 	private JPanel mainPanel;
 	private JButton addBookButton;
 	private JButton updateTableButton;
+	private JList list1;
 	private LibraryManagementAppHandler libraryManagementAppHandler = new LibraryManagementAppHandler();
 	private BookInputWindow bookInputWindow = libraryManagementAppHandler.getInputWindow();
 	private DefaultTableModel model;

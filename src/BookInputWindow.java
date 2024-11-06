@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class BookInputWindow extends JFrame{
+	JFrame frame = this;
 	private JPanel panel1;
 	private JTextField TitleField;
 	private JButton addBookButton;
@@ -30,6 +31,10 @@ public class BookInputWindow extends JFrame{
 					return;
 				}
 				libraryManagementAppHandler.addItem(LibraryItem.LibraryItemType.BOOK);
+				TitleField.setText("");
+				YearOfPublicationField.setText("");
+				AuthorField.setText("");
+				frame.dispose();
 			}
 		});
 
